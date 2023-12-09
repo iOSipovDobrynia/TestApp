@@ -13,7 +13,19 @@
 		E3B3437C2B24777800573D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B3437A2B24777800573D0B /* Main.storyboard */; };
 		E3B3437E2B24777900573D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B3437D2B24777900573D0B /* Assets.xcassets */; };
 		E3B343812B24777900573D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B3437F2B24777900573D0B /* LaunchScreen.storyboard */; };
+		E3B343892B2477F800573D0B /* SoundBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B343882B2477F800573D0B /* SoundBar.swift */; };
+		E3B343912B2478DC00573D0B /* SoundBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B343902B2478DC00573D0B /* SoundBarTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3B343922B2478DC00573D0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3B343692B24777800573D0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3B343702B24777800573D0B;
+			remoteInfo = TestApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E3B343712B24777800573D0B /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		E3B3437D2B24777900573D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3B343802B24777900573D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3B343822B24777900573D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B343882B2477F800573D0B /* SoundBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBar.swift; sourceTree = "<group>"; };
+		E3B3438E2B2478DC00573D0B /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B343902B2478DC00573D0B /* SoundBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E3B3436E2B24777800573D0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B3438B2B2478DC00573D0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B343732B24777800573D0B /* TestApp */,
+				E3B3438F2B2478DC00573D0B /* TestAppTests */,
 				E3B343722B24777800573D0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B343712B24777800573D0B /* TestApp.app */,
+				E3B3438E2B2478DC00573D0B /* TestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +87,17 @@
 				E3B3437D2B24777900573D0B /* Assets.xcassets */,
 				E3B3437F2B24777900573D0B /* LaunchScreen.storyboard */,
 				E3B343822B24777900573D0B /* Info.plist */,
+				E3B343882B2477F800573D0B /* SoundBar.swift */,
 			);
 			path = TestApp;
+			sourceTree = "<group>";
+		};
+		E3B3438F2B2478DC00573D0B /* TestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3B343902B2478DC00573D0B /* SoundBarTests.swift */,
+			);
+			path = TestAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = E3B343712B24777800573D0B /* TestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E3B3438D2B2478DC00573D0B /* TestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3B343942B2478DC00573D0B /* Build configuration list for PBXNativeTarget "TestAppTests" */;
+			buildPhases = (
+				E3B3438A2B2478DC00573D0B /* Sources */,
+				E3B3438B2B2478DC00573D0B /* Frameworks */,
+				E3B3438C2B2478DC00573D0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3B343932B2478DC00573D0B /* PBXTargetDependency */,
+			);
+			name = TestAppTests;
+			productName = TestAppTests;
+			productReference = E3B3438E2B2478DC00573D0B /* TestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					E3B343702B24777800573D0B = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					E3B3438D2B2478DC00573D0B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E3B343702B24777800573D0B;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				E3B343702B24777800573D0B /* TestApp */,
+				E3B3438D2B2478DC00573D0B /* TestAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +187,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3B3438C2B2478DC00573D0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,10 +204,27 @@
 				E3B343792B24777800573D0B /* ViewController.swift in Sources */,
 				E3B343752B24777800573D0B /* AppDelegate.swift in Sources */,
 				E3B343772B24777800573D0B /* SceneDelegate.swift in Sources */,
+				E3B343892B2477F800573D0B /* SoundBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B3438A2B2478DC00573D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B343912B2478DC00573D0B /* SoundBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3B343932B2478DC00573D0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3B343702B24777800573D0B /* TestApp */;
+			targetProxy = E3B343922B2478DC00573D0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E3B3437A2B24777800573D0B /* Main.storyboard */ = {
@@ -297,8 +377,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +387,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.osipov.dobrynia.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +408,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +418,46 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.osipov.dobrynia.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E3B343952B2478DC00573D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.osipov.dobrynia.TestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
+			};
+			name = Debug;
+		};
+		E3B343962B2478DC00573D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.osipov.dobrynia.TestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
 			};
 			name = Release;
 		};
@@ -356,6 +478,15 @@
 			buildConfigurations = (
 				E3B343862B24777900573D0B /* Debug */,
 				E3B343872B24777900573D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3B343942B2478DC00573D0B /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3B343952B2478DC00573D0B /* Debug */,
+				E3B343962B2478DC00573D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
